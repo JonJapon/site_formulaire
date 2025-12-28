@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réserver une Session | GameConnect</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="card">
+        <h2>Nouvelle Réservation</h2>
+        
+        <form id="booking-form">
+            <div class="input-grid">
+                <div class="field">
+                    <label>Pseudo Joueur</label>
+                    <input type="text" id="p-pseudo" placeholder="Ex: Aero_Strike" required>
+                </div>
+                <div class="field">
+                    <label>ID Discord (Numérique)</label>
+                    <input type="text" id="p-discord-id" placeholder="Ex: 282149594000000000" required>
+                </div>
+            </div>
+
+            <div class="input-grid">
+                <div class="field">
+                    <label>Jeu</label>
+                    <select id="p-game" required>
+                        <option value="League of Legends">League of Legends</option>
+                        <option value="Valorant">Valorant</option>
+                        <option value="Fortnite">Fortnite</option>
+                        <option value="Counter-Strike 2">Counter-Strike 2</option>
+                    </select>
+                </div>
+                <div class="field">
+                    <label>Âge</label>
+                    <input type="number" id="p-age" placeholder="Ex: 20" required>
+                </div>
+            </div>
+
+            <div class="input-grid">
+                <div class="field">
+                    <label>Date de session</label>
+                    <input type="date" id="p-date" required>
+                </div>
+                <div class="field">
+                    <label>Heure de début</label>
+                    <input type="time" id="p-time" required>
+                </div>
+            </div>
+
+            <div class="input-grid">
+                <div class="field">
+                    <label>Durée (h)</label>
+                    <input type="number" id="p-duration" min="1" max="12" value="1">
+                </div>
+            </div>
+
+            <div class="btn-container">
+                <button type="submit" id="submit-btn" class="btn-confirm">
+                    <span class="btn-text">ENVOYER LA DEMANDE</span>
+                </button>
+            </div>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
